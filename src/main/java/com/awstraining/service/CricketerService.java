@@ -48,6 +48,12 @@ public class CricketerService {
 		cricketer.setName("Shikhar Dawan ");
 		cricketer.setTeam("Delhi Capitals");
 		cricketers.add(cricketer);
+		
+		
+		cricketer = new Cricketer();
+		cricketer.setName("Ben Stokes");
+		cricketer.setTeam("Rajasthan Royals");
+		cricketers.add(cricketer);
 		return cricketers;
 		
 	}
