@@ -7,7 +7,7 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv target/awstraining-eb.war awstraining-eb.war
+      - mv target/awstraining-eb.war ../awstraining-eb.war
 artifacts:
   files:
     - awstraining-eb.war
