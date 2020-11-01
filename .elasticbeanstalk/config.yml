@@ -1,0 +1,20 @@
+branch-defaults:
+  master:
+    environment: awstraining-eb-dev
+global:
+  application_name: awstraining-eb
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Tomcat 8.5 with Java 8 running on 64bit Amazon Linux
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: null
+  sc: git
+  workspace_type: Application
+deploy: 
+  artifact: target/awstraining-eb.war
+ 
