@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  post_build:
+    commands:
+      - mvn package
+      - mv target/awstraining-eb.war awstraining-eb.war
+artifacts:
+  files:
+    - awstraining-eb.war
+    - .ebextensions/**/*
+  base-directory: 'target/awstraining-eb'
