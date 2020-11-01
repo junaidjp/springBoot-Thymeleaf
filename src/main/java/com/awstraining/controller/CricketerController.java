@@ -14,6 +14,7 @@ public class CricketerController {
 		this.service = service;
 	}
 	
+	//Adding some comments
 	@GetMapping("/cricketers.html")
 	public String all(Model model) {
 	model.addAttribute("cricketers", service.findAll());
