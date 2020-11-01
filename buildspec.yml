@@ -11,4 +11,3 @@ phases:
 artifacts:
   files:
     - target/*.war
-  base-directory: 'target/awstraining-eb'
