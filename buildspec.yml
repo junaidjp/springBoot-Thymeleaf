@@ -10,5 +10,5 @@ phases:
       
 artifacts:
   files:
-    - target/awstraining-eb.war
-  discard-paths: yes  
+    - target/awstraining-eb
+  discard-paths: yes
