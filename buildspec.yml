@@ -8,5 +8,7 @@ phases:
     commands:
       - mvn package
       
-artifacts: target/awstraining-eb.war
-  
+artifacts:
+  files:
+    - target/awstraining-eb.war
+  discard-paths: yes  
