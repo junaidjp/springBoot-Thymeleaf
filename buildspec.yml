@@ -1,14 +1,20 @@
 version: 0.2
-
 phases:
   install:
     runtime-versions:
       java: corretto8
+  pre_build:
+    commands:
+    - echo In the pre_build phase...
+  build:
+    commands:
+    - echo Build started on `date`
   post_build:
     commands:
-      - mvn package
-      
+    - echo Build completed on `date`
+    - mvn package
+    - mv target/awstraining-eb.war awstraining-eb.war
 artifacts:
   files:
-    - target/awstraining-eb.war
-  discard-paths: yes
+  - awstraining-eb.war
+  - .ebextensions/**/*
