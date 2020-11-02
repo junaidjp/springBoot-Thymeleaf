@@ -18,3 +18,4 @@ artifacts:
   files:
   - awstraining-eb.war
   - .ebextensions/**/*
+  base-directory: 'target/awstraining-eb' 
