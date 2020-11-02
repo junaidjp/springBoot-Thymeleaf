@@ -8,6 +8,5 @@ phases:
     commands:
       - mvn package
       
-artifacts:
-  files:
-    - target/*.war
+artifacts: target/awstraining-eb.war
+  
