@@ -7,8 +7,9 @@ phases:
   post_build:
     commands:
       - mvn package
+      - mv target/awstraining-eb ./
       
 artifacts:
   files:
-    - target/awstraining-eb
+    - awstraining-eb/**/*
   discard-paths: yes
