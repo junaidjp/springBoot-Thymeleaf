@@ -19,4 +19,4 @@ artifacts:
   files:
   - target/awstraining-eb.war
   - .ebextensions/**/*
-  base-directory: 'target/awstraining-eb' 
+  base-directory: 'target/awstraining-eb'
