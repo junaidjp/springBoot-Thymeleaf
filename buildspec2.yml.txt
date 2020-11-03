@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  post_build:
+    commands:
+      - mvn package
+      
+artifacts:
+  files:
+    - target/awstraining-eb.war
+  discard-paths: yes
