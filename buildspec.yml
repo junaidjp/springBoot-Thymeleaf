@@ -8,15 +8,13 @@ phases:
     - echo In the pre_build phase...
   build:
     commands:
-    - echo Build started on 
+    - echo Build started on `date`
   post_build:
     commands:
-    - echo Build completed on 
-    - mvn clean package
-    - mv target/awstraining-eb awstraining-eb
-   
+    - echo Build completed on `date`
+    - mvn package
+    - mv target/awstraining-eb.war awstraining-eb.war
 artifacts:
-  discard-paths: yes
   files:
-  - awstraining-eb/**/
-  
+  - awstraining-eb.war
+  - .ebextensions/**/*
