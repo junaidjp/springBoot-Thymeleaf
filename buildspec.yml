@@ -13,10 +13,12 @@ phases:
     commands:
     - echo Build completed on 
     - mvn clean package
+    - mv target/awstraining-eb.war awstraining-eb.war
    
 artifacts:
+  discard-paths: yes
   files:
-  - target/awstraining-eb.war
+  - awstraining-eb.war
   - .ebextensions/**/*
   base-directory: 'target/awstraining-eb'
   
