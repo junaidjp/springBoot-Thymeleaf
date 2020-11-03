@@ -13,9 +13,9 @@ phases:
     commands:
     - echo Build completed on 
     - mvn clean package
-    - mv -f target/awstraining-eb  ./
+   
 artifacts:
   discard-paths: yes
   files:
-  - awstraining-eb/**/*
+  - target/awstraining-eb/**/*
   
