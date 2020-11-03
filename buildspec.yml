@@ -8,10 +8,10 @@ phases:
     - echo In the pre_build phase...
   build:
     commands:
-    - echo Build started on `date`
+    - echo Build started on 
   post_build:
     commands:
-    - echo Build completed on `date`
+    - echo Build completed on 
     - mvn package
     - mv target/awstraining-eb.war awstraining-eb.war
 artifacts:
