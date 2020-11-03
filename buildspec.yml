@@ -18,5 +18,5 @@ phases:
 artifacts:
   discard-paths: yes
   files:
-  - awstraining-eb/**/*
+  - awstraining-eb/**
   
