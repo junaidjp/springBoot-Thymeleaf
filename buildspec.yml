@@ -15,8 +15,8 @@ phases:
     - mvn clean package
    
 artifacts:
-  discard-paths: yes
   files:
   - target/awstraining-eb.war
   - .ebextensions/**/*
+  base-directory: 'target/awstraining-eb'
   
