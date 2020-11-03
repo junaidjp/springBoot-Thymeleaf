@@ -13,7 +13,7 @@ phases:
     commands:
     - echo Build completed on 
     - mvn package
-    - mv target/awstraining-eb ./
+    - mv -f target/awstraining-eb  ./
 artifacts:
   discard-paths: yes
   files:
